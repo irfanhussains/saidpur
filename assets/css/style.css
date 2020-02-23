@@ -149,18 +149,36 @@ margin: 43px 10px 0 0;
 }
 .banner {
 	position:relative;
+	overflow:hidden;
 }
-.banner .caption {
-	position:absolute;
-	top: 25%;
-	width: 100%;
-}
-.banner .caption .text{
-		border-bottom:10px #fff solid;
+.banner .text{
 	font-size:75px;
 	color:#fff;
 	font-family: 'Oswald', sans-serif;
 }
+.banner .captionOne {
+	position:absolute;
+	top: 5%;
+	width: 100%;
+}
+.banner .captionOne .bg{
+	background:rgba(63,18,92,0.7);
+	max-width:50%;
+	text-align:center;
+}
+
+.banner .captionTwo {
+	position:absolute;
+	bottom: 5%;
+	width: 100%;
+}
+.banner .captionTwo .bg{
+	background:rgba(63,18,92,0.7);
+	text-align:center;
+	float:right;
+}
+
+
 .upcoming {
 	background: #F4DE7C;
 	min-height: 200px;
@@ -338,6 +356,9 @@ footer{
 	.navbar-nav>li {
     font-size: 15px;
  	}
+	.banner .text {
+    font-size: 45px;
+}
 }
 @media (max-width: 768px) {
 	.navbar-toggle {
@@ -412,21 +433,10 @@ footer{
 .partners {
     padding: 25px;
 }
-/*.partners .owl-carousel{
-    padding: 0;
+.banner .text {
+    font-size: 35px;
 }
-.partners .owl-nav {
-    position: relative;
-    top: 0;
-    width: auto;
-}
-.partners .owl-carousel .owl-nav button.owl-next {
-    margin-right: 0;
-}
-.partners .owl-carousel .owl-nav button.owl-prev {
-    float: left;
-    margin-left: 0;
-}*/
+
 }
 @media (max-width: 767px) {
 	.navbar-toggle {
@@ -454,6 +464,9 @@ footer{
 .upcoming_heading {
     font-size: 25px;
     padding: 19px 0;
+}
+.banner .text {
+    font-size: 20px;
 }
 	
 }
